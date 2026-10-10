@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>RILEX Academy · Mission 01</title>
+<style>
+:root{color-scheme:dark;--bg:#0c1016;--panel:#131b25;--line:#2a3542;--text:#edf3fa;--muted:#a1b0c3;--accent:#b5f36a}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0,#20322555,transparent 50%),var(--bg);color:var(--text);font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1080px;margin:auto;padding:26px}header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.brand{font-weight:850;letter-spacing:3px}.brand span{color:var(--accent)}.mono{font:12px/1.6 ui-monospace,Consolas,monospace;letter-spacing:1px}.badge{border:1px solid #526743;border-radius:30px;color:var(--accent);padding:5px 12px}.eyebrow{color:var(--accent);margin-top:36px}h1{font-size:clamp(40px,7vw,72px);line-height:1.06;letter-spacing:-3px;margin:18px 0}h1 span{color:var(--muted)}.intro{max-width:590px;color:var(--muted);font-size:18px}.layout{display:grid;grid-template-columns:1.45fr 1fr;gap:22px;margin-top:35px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:28px}.card h2{font-size:21px;margin:0 0 12px}.muted{color:var(--muted)}.meta{display:flex;gap:9px;flex-wrap:wrap;margin:22px 0}.meta span{background:#202b37;border-radius:5px;padding:5px 10px;font-size:12px}.divider{border-top:1px solid var(--line);padding-top:22px;margin-top:22px}label{display:block;margin-bottom:8px;font-weight:600}input,textarea{width:100%;font:15px/1.6 ui-monospace,Consolas,monospace;background:#0b1119;color:var(--text);border:1px solid #425065;border-radius:8px;padding:13px}input:focus,textarea:focus,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}button{border:0;border-radius:8px;background:var(--accent);color:#14210b;padding:13px 19px;font-weight:750;cursor:pointer;margin-top:14px}button.secondary{background:#243141;color:var(--text)}button:hover{filter:brightness(1.1)}#status{min-height:52px;margin-top:15px;font-size:14px}.step{display:flex;gap:15px;margin:19px 0}.num{color:var(--accent);font-family:monospace}.step p{margin:0}.step small{color:var(--muted)}details{margin-top:22px}summary{cursor:pointer;color:var(--accent)}textarea{min-height:150px;margin-top:10px;resize:vertical}.road{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:25px}.road div{border-top:2px solid var(--line);padding-top:12px;font-size:13px;color:var(--muted)}.road div:first-child{border-color:var(--accent);color:var(--accent)}footer{color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:20px;padding-bottom:40px}@media(max-width:720px){.layout{grid-template-columns:1fr}.card{padding:22px}header,main,footer{padding:20px}.road{grid-template-columns:repeat(2,1fr)}header .mono{font-size:10px}h1{letter-spacing:-2px}}
+</style></head><body>
+<header><div class="brand">RILEX<span> / </span>ACADEMY</div><div class="mono badge">TRAINING LAB · ONLINE</div></header>
+<main><div class="eyebrow mono">MISSION 001 / WEB FUNDAMENTALS</div><h1>Look beneath<br><span>the surface.</span></h1><p class="intro">A developer left something behind. Your job is to investigate this page, recover the hidden flag, and explain how you found it.</p>
+<div class="layout"><section class="card"><div class="mono muted">YOUR ASSIGNMENT</div><h2>The forgotten artifact</h2><p class="muted">This portal looks ordinary. Somewhere in the content delivered to your browser is a recoverable mission code. Follow the evidence.</p><div class="meta"><span>BEGINNER</span><span>1 FLAG</span><span>BROWSER ONLY</span></div>
+<form id="submission" class="divider"><label for="flag">Submit recovered flag</label><input id="flag" placeholder="RILEX{...}" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="160" required aria-describedby="status"><button type="submit">Verify flag ↗</button><div id="status" role="status" aria-live="polite">Awaiting evidence. Exact spelling matters.</div></form></section>
+<aside class="card"><div class="mono muted">INVESTIGATOR WORKFLOW</div><h2>Observe. Question. Verify.</h2><div class="step"><span class="num">01</span><p>Explore the page<br><small>What can your browser tell you?</small></p></div><div class="step"><span class="num">02</span><p>Follow a clue<br><small>Record what seems out of place.</small></p></div><div class="step"><span class="num">03</span><p>Recover &amp; explain<br><small>Send the flag and your method to your coach.</small></p></div><details><summary>Reveal first hint</summary><p class="muted">A page contains more than the content it displays. Start with your browser's developer tools.</p></details><p class="muted divider" style="font-size:13px">Scope: this HTML page only. No scanning GitHub or other services is needed. This is an intentionally exposed training puzzle, not a real login system.</p></aside></div>
+<section class="card" style="margin-top:22px"><label for="notes">Investigation notes</label><p class="muted" style="margin:0">What did you observe? What did you try? What does the finding demonstrate?</p><textarea id="notes" placeholder="Observation:
+Steps to reproduce:
+Evidence:
+Impact:
+Suggested fix:"></textarea><button class="secondary" id="download" type="button">Download my notes ↓</button><small class="muted" style="display:block;margin-top:10px">Notes stay in this tab until you download them. Reloading clears them.</small></section>
+<div class="road"><div>01 / Browser inspection · ACTIVE</div><div>02 / Request analysis · NEXT</div><div>03 / Access control · FUTURE LAB</div><div>04 / Clear reporting · FUTURE LAB</div></div></main><footer><span>RILEX · Learn by investigating</span><span>Mission 01 · No accounts or tracking</span></footer>
+<!-- Release note: remove the legacy diagnostic artifact before production. -->
+<script type="application/json" id="diagnostic-artifact">{"build":"academy-001","encoding":"base64","artifact":"UklMRVh7YnJvd3Nlcl9mMTU3NWRmNTUwfQ=="}</script>
+<script>
+const expectedDigest='f3619b3c5281fa4c624ec0d10382a6b14e7f2320e9925d9a46581062053aff5c';
+const form=document.getElementById('submission');
+const status=document.getElementById('status');
+form.addEventListener('submit',async event=>{
+ event.preventDefault();
+ const value=document.getElementById('flag').value.trim();
+ if(!/^RILEX\{[^{}]+\}$/.test(value)){status.textContent='Use the complete flag, including RILEX and the braces.';return;}
+ if(!globalThis.crypto?.subtle){status.textContent='Local verification needs HTTPS or localhost in this browser. You can still send your recovered flag to your coach.';return;}
+ try{
+ const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value));
+ const digest=Array.from(new Uint8Array(bytes),b=>b.toString(16).padStart(2,'0')).join('');
+ const ok=digest===expectedDigest;
+ status.textContent=ok?'Mission complete. Send this flag and your discovery steps to your coach.':'Not the mission flag. Recheck the evidence and exact characters.';
+ status.style.color=ok?'#b5f36a':'#ffb8a8';
+ }catch{status.textContent='Verification unavailable. Send your recovered flag to your coach.';}
+});
+document.getElementById('download').addEventListener('click',()=>{
+ const content='RILEX Academy — Mission 01 report\n\n'+document.getElementById('notes').value;
+ const url=URL.createObjectURL(new Blob([content],{type:'text/plain;charset=utf-8'}));
+ const link=document.createElement('a');link.href=url;link.download='rilex-mission-01-notes.txt';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+</script></body></html>
